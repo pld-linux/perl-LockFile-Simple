@@ -37,7 +37,7 @@ systemowej "write()". Nie oznacza to, ¿e jest on wolny od sytuacji
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
