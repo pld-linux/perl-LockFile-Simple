@@ -39,7 +39,7 @@ systemowej "write()". Nie oznacza to, ¿e jest on wolny od sytuacji
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
