@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	LockFile
-%define	pnam	Simple
+%define		pdir	LockFile
+%define		pnam	Simple
 Summary:	LockFile::Simple Perl module - simple file locking scheme
 Summary(pl):	Modu³ Perla LockFile::Simple - prosty schemat blokowania plików
 Name:		perl-LockFile-Simple
