@@ -9,7 +9,7 @@ Summary:	LockFile::Simple Perl module - simple file locking scheme
 Summary(pl):	Modu³ Perla LockFile::Simple - prosty schemat blokowania plików
 Name:		perl-LockFile-Simple
 Version:	0.2.5
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
