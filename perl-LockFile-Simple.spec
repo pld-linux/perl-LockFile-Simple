@@ -9,12 +9,12 @@ Summary:	LockFile::Simple Perl module - simple file locking scheme
 Summary(pl):	Modu³ Perla LockFile::Simple - prosty schemat blokowania plików
 Name:		perl-LockFile-Simple
 Version:	0.2.5
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,7 +37,8 @@ systemowej "write()". Nie oznacza to, ¿e jest on wolny od sytuacji
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -53,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_sitelib}/LockFile/*.pm
-%{perl_sitelib}/LockFile/Lock
+%{perl_vendorlib}/LockFile/*.pm
+%{perl_vendorlib}/LockFile/Lock
 %{_mandir}/man3/*
