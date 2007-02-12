@@ -6,7 +6,7 @@
 %define		pdir	LockFile
 %define		pnam	Simple
 Summary:	LockFile::Simple Perl module - simple file locking scheme
-Summary(pl):	Modu≥ Perla LockFile::Simple - prosty schemat blokowania plikÛw
+Summary(pl.UTF-8):   Modu≈Ç Perla LockFile::Simple - prosty schemat blokowania plik√≥w
 Name:		perl-LockFile-Simple
 Version:	0.2.5
 Release:	3
@@ -26,13 +26,13 @@ is not based on any file locking system calls such as "flock()" or
 properties, such as the atomicity of the "write()" system call. It is
 not meant to be exempt from all race conditions, especially over NFS.
 
-%description -l pl
-Modu≥ Perla LockFile::Simple - udostÍpnia prosty system blokowania
-plikÛw nie oparty na øadnych funkcjach systemowych, takich jak
-"flock()" i "lockf()" s≥uø±cych do blokowania plikÛw. Korzysta on z
-podstawowych w≥asno∂ci systemÛw plikÛw, takich jak atomowo∂Ê funkcji
-systemowej "write()". Nie oznacza to, øe jest on wolny od sytuacji
-"wy∂cigu" (race conditions), zw≥aszcza w przypadku korzystania z NFS.
+%description -l pl.UTF-8
+Modu≈Ç Perla LockFile::Simple - udostƒôpnia prosty system blokowania
+plik√≥w nie oparty na ≈ºadnych funkcjach systemowych, takich jak
+"flock()" i "lockf()" s≈Çu≈ºƒÖcych do blokowania plik√≥w. Korzysta on z
+podstawowych w≈Çasno≈õci system√≥w plik√≥w, takich jak atomowo≈õƒá funkcji
+systemowej "write()". Nie oznacza to, ≈ºe jest on wolny od sytuacji
+"wy≈õcigu" (race conditions), zw≈Çaszcza w przypadku korzystania z NFS.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
