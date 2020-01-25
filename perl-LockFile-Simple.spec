@@ -4,7 +4,6 @@
 
 %define		pdir	LockFile
 %define		pnam	Simple
-%include	/usr/lib/rpm/macros.perl
 Summary:	LockFile::Simple Perl module - simple file locking scheme
 Summary(pl.UTF-8):	Moduł Perla LockFile::Simple - prosty schemat blokowania plików
 Name:		perl-LockFile-Simple
